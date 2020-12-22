@@ -25,7 +25,10 @@ public class Driver{
           randData[i]=i+rng;
         }
       }else if(args[2].equals("reversed")){
-	      System.out.println("YOU MUST EDIT THIS FILE BEFORE USING IT!!! REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+	      int rng=(int)(Math.random()*100);
+        for (int i=0;i<Integer.parseInt(args[0]);i++){
+          randData[i]=rng+(i*-1);
+        }
       }
 
       if(args[1].equals("bubble")){
